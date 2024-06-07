@@ -3,9 +3,12 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const questionsRouter = require('./routes/questions');
 const usersRouter = require('./routes/users');
+const path=require('path')
 
 const app = express();
 const PORT = 5000;
+
+app.use(express.static(path.join(__dirname,'../client/build')))
 
 mongoose.connect('mongodb://localhost:27017/interview-guide', {
   useNewUrlParser: true,
