@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif; /* Use your preferred font family */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Set your background color */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+ 
+  
+  /* Page styles */
+  .page {
+    padding: 20px;
+  }
+  
+  .page h1 {
+    font-size: 32px;
+    color: #333; /* Set your heading color */
+  }
+  
+  .page p {
+    font-size: 18px; /* Set your paragraph font size */
+    line-height: 1.5; /* Set your paragraph line height */
+    color: #555; /* Set your paragraph color */
+  }
+  
+  /* Job details page styles */
+  .job-details {
+    padding: 20px;
+  }
+  
+  .job-details h2 {
+    font-size: 24px;
+    color: #333; /* Set your heading color */
+  }
+  .side-heading {
+    font-weight: bold;
+    color: #28a745; 
+    font-size: 21px;
+  }
+  
+  .job-details p {
+    font-size: 18px; /* Set your paragraph font size */
+    line-height: 1.5; /* Set your paragraph line height */
+    color: #555; /* Set your paragraph color */
+  }
+  
+  .job-details b {
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .navbar ul li {
+      margin-right: 10px;
+    }
+  
+    .page {
+      padding: 10px;
+    }
+  
+    .page h1 {
+      font-size: 28px;
+    }
+  
+    .job-details h2 {
+      font-size: 20px;
+    }
+  
+    .job-details p {
+      font-size: 16px;
+    }
+  }
+  

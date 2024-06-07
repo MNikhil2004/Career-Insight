@@ -1,0 +1,45 @@
+ .popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    margin-bottom: -180px;
+    margin-left: 55px;
+}
+.popular h1{
+    color: rgb(70, 69, 69);
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.popular-comp{
+    display: flex;
+    gap: 30px;
+}
+
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: rgb(103, 101, 101);
+}
+.popular button{
+    color: rgb(13, 14, 13);
+    background-color: #f3f4f3;
+    border-radius: 75px;
+    min-width: 195px;
+    min-height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.popular button:hover{
+    transform: scale(1.05);
+    transition: 0.6;
+    color: rgb(232, 26, 26);
+    background-color: rgb(244, 216, 141);
+
+}
+.popular button:active{
+    background-color: #f3f3f3;} 
