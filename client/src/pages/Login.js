@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import styles from './css/Login.css';
+import  './css/Login.css'; // Update the path to your CSS file
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -24,21 +24,31 @@ function Login() {
     };
 
     return (
-        <div className={styles.container}>
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
-                    <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            {message && <p className={styles.message}>{message}</p>}
-            <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+        <div className="login-container">
+            <div className="login-card">
+                <h2>Login</h2>
+                <form onSubmit={handleSubmit}>
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        id="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
+                    <button type="submit">Login</button>
+                </form>
+                {message && <p className="error">{message}</p>}
+                <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+            </div>
         </div>
     );
 }
