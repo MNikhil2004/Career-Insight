@@ -6,7 +6,7 @@ import './css/Companies.css';
 const Companies = () => {
   const navigate = useNavigate();
 
-  const handleButtonClick = (companyId) => {
+  const handleButtonClick = (companyId) => { 
     navigate(`/questions/${companyId}`);
   };
 
@@ -27,7 +27,7 @@ const Companies = () => {
               <p className='card-salary'>Salary: ₹{item.salary}</p>
               <button onClick={() => handleButtonClick(item.id)}><b>Click Here</b></button>
             </div>
-          </div>
+          </div> 
         ))}
       </div>
     </div>

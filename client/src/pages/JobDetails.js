@@ -9,7 +9,7 @@ const JobDetails = () => {
 
   if (!job) {
     return <div className="job-details">Job not found</div>;
-  }
+  } 
 
   return (
     <div className='job-details'>

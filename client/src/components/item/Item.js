@@ -8,7 +8,7 @@ const Item = ({ image, name, salary }) => {
         <img src={image} alt={name}/>
         <p>{name}</p>
         <div className='item-salary'>
-            Salary:{salary}₹
+            Salary:{salary}₹ 
         </div>
         {/* <button onClick={handleClick}>Know More</button> */}
     </div>

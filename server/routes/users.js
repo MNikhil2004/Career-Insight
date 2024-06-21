@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Registration route
 router.post('/signup', async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password } = req.body; 
   try {
     // Check if user already exists
     const existingUser = await User.findOne({ email });

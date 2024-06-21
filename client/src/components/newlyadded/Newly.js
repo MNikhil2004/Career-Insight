@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 import './Newly.css';
-import amazon1 from '../assets/amazon1.png';
+import amazon3 from '../assets/amazon3.jpeg';
 import flipcart from '../assets/flipkart.jpeg';
 
 const Newly = () => {
@@ -19,7 +19,7 @@ const Newly = () => {
       </div>
       <div className='newlyadded-right'>
         <h2>Companies</h2>
-        <img src={amazon1} alt='' />
+        <img src={amazon3} alt='' />
         <img src={flipcart} alt='' />
       </div>
     </div>
