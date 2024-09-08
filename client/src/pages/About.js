@@ -126,7 +126,7 @@ const About = () => {
         </div>
       </section>
       <div>
-        <button className='btn btn-primary text-danger' onClick={openModal}>Rate Us</button>
+        <button className='btn btn-primary text-warning' onClick={openModal}>Rate Us</button>
       </div>
 
       <RateUsModal isOpen={isModalOpen} onClose={closeModal} />

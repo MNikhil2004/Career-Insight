@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import  './css/Login.css'; // Update the path to your CSS file
+import './css/Login.css'; // Update the path to your CSS file
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -14,8 +14,14 @@ function Login() {
         try {
             const response = await axios.post('http://localhost:5000/api/users/login', { email, password });
             setMessage(response.data.message);
-            if (response.data.redirectTo) {
-                navigate('/'); // Redirect to home page
+
+            // Check if the login was successful and name is returned
+            if (response.data.name) {
+                // Store the user's name in local storage
+                localStorage.setItem('userName', JSON.stringify(response.data.name));
+
+                // Redirect to the home page
+                navigate('/');
             }
         } catch (error) {
             console.error('Error during login:', error);

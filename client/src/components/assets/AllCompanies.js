@@ -25,7 +25,7 @@ const AllCompanies = [
     role: 'Software-Developer',
   },
   {
-    id: 2,
+    id: 2, 
     name: 'Adobe',
     image: adobe,
     salary: 1000000,

@@ -72,4 +72,53 @@
     border-radius: 10px;
     background-color: rgb(214, 173, 79);
   }
+
+
+/* New Scoped Styles for Logout Popup */
+.navbar .logout-popup {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Start off-screen to the left */
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideInFromRight 1s forwards, slideOutToRight 1s 3s forwards; /* Slide in from the left and then slide out */
+    z-index: 1000; /* Ensure popup is above other elements */
+}
+
+.navbar .logout-popup .red-line {
+    width: 0;
+    height: 3px;
+    background-color: red;
+    margin-bottom: 5px;
+    animation: expand 2s forwards; /* Animate red line expansion */
+}
+
+@keyframes slideInFromLeft {
+    from {
+        left: -300px; /* Start off-screen */
+    }
+    to {
+        left: 20px; /* Final position */
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        left: 20px; /* Start position */
+    }
+    to {
+        left: -300px; /* Move off-screen */
+    }
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
  
